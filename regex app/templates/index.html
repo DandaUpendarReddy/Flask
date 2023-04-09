@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Backend Project</title>
+  </head>
+  <body style="background-color: beige;text-align: center;">
+    
+    <h1 style="color: black;font-size: xx-large;">RegEX </h1>
+    <form method="POST" action="{{ url_for('matches') }}" style="text-align: center;">
+      <label  for="test_string" style="color: darkblue; font-size: large;font-style: initial;">Test String:-</label>
+      <input type="text" id="test_string" name="test_string" placeholder="Enter The Text" 
+      style="color: black;width: 300px;height: 100px;font-size: 15px;" />
+      <br><br/>
+
+      <label  for="regex_input" style="color: darkblue; font-size: large;font-style: initial; ">Regular Expression:-</label>
+      <input type="text" id="regex_input" name="regex_input" placeholder="Enter the Pattern" 
+      style="color: black;height: 40px;width: 300px; font-size: 15px;"/>
+      <br><br>
+      <button  type="submit" value="submit " class="submit" style="color: blue;font-size: larger;">Submit</button>
+      <input type="reset" value="Refresh" style="font-size: larger;"/>
+      
+      
+    </form>
+    
+  </body>
+</html>
