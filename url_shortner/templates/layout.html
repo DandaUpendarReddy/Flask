@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block titleblock %}    
+    
+        {% endblock %}
+    </title>
+</head>
+<body style="background-color: burlywood;font-weight: bold;">
+    <nav>
+        <ul>
+        <li><a href="{{ url_for('home_page') }}">Home</a></li>
+        <li><a href="{{ url_for('history_page') }}">History</a></li>
+    </ul>
+    </nav>
+    
+    {% block bodyblock %}    
+    
+    {% endblock %}
+</body>
+</html>
